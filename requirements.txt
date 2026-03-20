@@ -1,0 +1,29 @@
+# 🚀 FastAPI backend
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# 🧠 Database (PostgreSQL - Supabase)
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+
+# 🔐 Auth (JWT + password hashing)
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+
+# ⚙️ Environment config
+python-dotenv==1.0.1
+
+# 📡 API requests (only if ingestion/admin refresh is used)
+requests==2.31.0
+feedparser==6.0.11
+
+# 🧱 Data validation (FastAPI uses this)
+pydantic==2.6.4
+
+python-jose
+passlib[bcrypt]
+bcrypt==4.0.1
+
+email-validator==2.1.0.post1
+
+twilio
