@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: ai-news-dashboard
+    ports:
+      - "8000:8000" # Backend + frontend served here
+    env_file:
+      - .env # All your keys: DB, AI, Twilio, Gmail
+    restart: unless-stopped
